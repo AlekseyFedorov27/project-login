@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+  <link href="./style.css" rel="stylesheet"></head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap d-flex align-items-center">
+        <div class="form-card card ml-auto shadow">
+
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link color" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">login</a>
+                <a class="nav-item nav-link active" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">register</a>
+              </div>
+            </nav>
+
+            <!-- login-body -->
+          <div class="card-body login-body">
+            <h4 class="card-title">Please Login</h4>
+            <form name="loginForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  data-required="password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <!-- register-body -->
+          <div class="card-body register-body hidden-form">
+              <h4 class="card-title">Please Register (Auto complite)</h4>
+              <form name="registerForm">
+
+                <div class="row">
+                <div class="form-group col">
+                    <input
+                    type="email"
+                    class="form-control"
+                    id="emailReg"
+                    aria-describedby="emailHelp"
+                    placeholder="email"
+                    data-required="email"
+                    data-invalid-message="Please provide valid email example@example.com"
+                  />
+                </div>
+                <div class="form-group col">
+                    <input
+                    type="password"
+                    class="form-control"
+                    id="passwordReg"
+                    placeholder="password"
+                    data-required="password"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col">
+                  <input type="nickname" class="form-control" id="nickname" placeholder="nickname"  data-required="nickname"/>
+                </div>
+                <div class="form-group col">
+                    <input type="first_name" class="form-control" id="first_name" placeholder="first_name"  data-required="first_name"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col">
+                    <input type="last_name" class="form-control" id="last_name" placeholder="last_name"  data-required="last_name"/>
+                </div>
+                <div class="form-group col">
+                    <input type="phone" class="form-control" id="phone" placeholder="phone"  data-required="phone"/>
+                </div>
+              </div>
+
+              
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">gender orientation</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option value="male" selected>male</option>
+                    <option value="female">female</option>
+                  </select>
+                </div>
+
+                  <div class="row">
+                  <div class="form-group col">
+                      <input type="country" class="form-control" id="country" placeholder="country"  data-required="country"/>
+                  </div>
+                   
+                  <div class="form-group col">
+                      <input type="city" class="form-control" disabled id="city" placeholder="city"  data-required="city"/>
+                  </div>
+
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <input type="date" class="form-control" id="date_of_birth" placeholder="date_of_birth_day"  data-required="date_of_birth_day"/>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- /.login-page-wrapp -->
+  <script type="text/javascript" src="polyfill.02118c9c50ccea127eb8.js"></script><script type="text/javascript" src="app.02118c9c50ccea127eb8.js"></script></body>
+</html>
